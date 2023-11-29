@@ -1,0 +1,186 @@
+What are Loops?
+In our everyday lives, we tend to repeat a lot of processes without noticing.
+
+For instance, if we want to cook a delicious recipe, we might have to prepare our ingredients by chopping them up. We chop and chop and chop until all of our ingredients are the right size. At this point, we stop chopping.
+
+If we break down our chopping task into a series of three smaller steps, we have:
+
+An initialization: We’re ready to cook and have a collection of ingredients we want to chop. We will start at the first ingredient.
+
+A repetition: We’re chopping away. We are performing the action of chopping over and over on each of our ingredients, one ingredient at a time.
+
+An end condition: We see that we have run out of ingredients to chop and so we stop.
+
+In programming, this process of using an initialization, repetitions, and an ending condition is called a loop. In a loop, we perform a process of iteration (repeating tasks).
+
+Programming languages like Python implement two types of iteration:
+
+Indefinite iteration, where the number of times the loop is executed depends on how many times a condition is met.
+
+Definite iteration, where the number of times the loop will be executed is defined in advance (usually based on the collection size).
+
+Typically we will find loops being used to iterate a collection of items. In the above example, we can think of our ingredients we want to chop as our collection. This is a form of definite iteration since we know how long our collection is in advance and thus know how many times we need to iterate over the collection of ingredients.
+
+Some collections might be small — like a short string, while other collections might be massive like a range of numbers from 1 to 10,000,000! But don’t worry, loops give us the ability to masterfully handle both ends of the spectrum. This simple, but powerful, concept saves us a lot of time and makes it easier for us to work with large amounts of data.
+
+In this lesson, we’ll learn how to use Python to implement both definite and indefinite iteration in our own programs.
+
+
+Why Loops?
+
+
+# Write 10 print() statements below! 
+print("This can be so much easier with loops!")
+print("This can be so much easier with loops!")
+print("This can be so much easier with loops!")
+print("This can be so much easier with loops!")
+print("This can be so much easier with loops!")
+print("This can be so much easier with loops!")
+print("This can be so much easier with loops!")
+print("This can be so much easier with loops!")
+print("This can be so much easier with loops!")
+print("This can be so much easier with loops!")
+
+
+For Loops: Introduction
+board_games = ["Settlers of Catan", "Carcassone", "Power Grid", "Agricola", "Scrabble"]
+
+sport_games = ["football", "hockey", "baseball", "cricket"]
+
+for game in board_games:
+    print(game)
+
+for sport in sport_games:
+  print(sport)
+
+
+For Loops: Using Range
+
+
+promise = "I will finish the python loops module!"
+
+
+for i in range(5):
+    
+    print(promise)
+
+
+
+While Loops: Introduction
+# While Loop Walkthrough
+count = 0
+print("Starting While Loop")
+while count <= 3:
+  # Loop Body
+  # Print if the condition is still true
+  print("Loop Iteration - count <= 3 is still true")
+  # Print the current value of count 
+  print("Count is currently " + str(count))
+  # Increment count
+  count += 1
+  print(" ----- ")
+print("While Loop ended")
+
+# Your code below: 
+countdown = 10
+while countdown >=0:
+  print(countdown)
+  countdown -= 1
+
+print("we have liftoff!")
+
+LOOPS
+While Loops: Lists
+
+python_topics = ["variables", "control flow", "loops", "modules", "classes"]
+
+#Your code below: 
+length = len(python_topics)
+index = 0
+
+while index < length:
+  print("I am learning about"+ python_topics[index] )
+  index +=1
+
+
+
+  Infinite Loops
+
+  students_period_A = ["Alex", "Briana", "Cheri", "Daniele"]
+students_period_B = ["Dora", "Minerva", "Alexa", "Obie"]
+
+for student in students_period_A:
+  students_period_A.append(student)
+  print(student)
+
+
+  LOOPS
+Loop Control: Break
+
+dog_breeds_available_for_adoption = ["french_bulldog", "dalmatian", "shihtzu", "poodle", "collie"]
+dog_breed_I_want = "dalmatian"
+
+for dog_breed in dog_breeds_available_for_adoption:
+   print(dog_breed)
+   if dog_breed == dog_breed_I_want:
+     print("They have the dog I want!")
+     break
+
+
+LOOPS
+Loop Control: Continue
+ages = [12, 38, 34, 26, 21, 19, 67, 41, 17]
+
+for i in ages:
+  if i<21:
+    continue
+  print(i)
+
+
+
+  Nested Loops
+    sales_data = [[12, 17, 22], [2, 10, 3], [5, 12, 13]]
+    scoops_sold =0
+
+
+    for location in sales_data:
+    print(location)  
+    for element in location:
+        scoops_sold += element
+        
+    print(scoops_sold)
+
+
+List Comprehensions: Introduction
+grades = [90, 88, 62, 76, 74, 89, 48, 57]
+scaled_grades =[grade + 10 for grade in grades]
+print(scaled_grades)
+
+
+List Comprehensions: Conditionals
+heights = [161, 164, 156, 144, 158, 170, 163, 163, 157]
+can_ride_coaster =[height for height in heights if height > 161]
+print(can_ride_coaster)
+
+
+Review
+# Your code below:
+single_digits = [0,1,2,3,4,5,6,7,8,9]
+
+
+squares= []
+cubes=[]
+for number in single_digits:
+  print(number)
+  square = number **2
+  squares.append(square)
+  cubed=number**3
+  cubes = [item**3 for item in single_digits]
+print(squares)
+print(cubes)
+
+
+
+
+
+
