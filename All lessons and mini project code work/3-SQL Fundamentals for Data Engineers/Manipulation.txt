@@ -1,0 +1,3 @@
+MANIPULATION
+Introduction to SQL
+ SELECT * FROM celebs;
